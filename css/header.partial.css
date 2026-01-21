@@ -1,9 +1,47 @@
 .header {
-  min-height: 100vh;
   background-image: url("../img/back-header.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4rem;
+
+    .header__menu {
+      display: flex;
+      gap: 1.25rem;
+
+      .header__menu-link {
+        display: inline-block;
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        letter-spacing: 0.2px;
+        line-height: 1.75rem;
+
+        &:hover {
+          background-color: var(--light-text-color);
+          color: var(--dark-text-color);
+        }
+      }
+    }
+
+    .header__center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .header__socials {
+      display: flex;
+      gap: 1.25rem;
+
+      .header__socials-item {
+        display: inline-block;
+        padding: 0.5rem 0.75rem;
+      }
+    }
+  }
+}
 
