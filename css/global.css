@@ -12,6 +12,7 @@
   --dark-text-color: #252b42;
   --light-text-color: #ffffff;
   --font-main: "Montserrat", sans-serif;
+  --button-bg-color: #24A0ED;
 
   scroll-behavior: smooth;
 }
