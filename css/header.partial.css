@@ -1,0 +1,9 @@
+.header {
+  min-height: 100vh;
+  background-image: url("../img/back-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
