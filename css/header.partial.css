@@ -49,29 +49,29 @@
   }
 
   .header__hero {
-    padding-block: 80px;
-    gap: 40px;
+    padding-block: 5rem;
+    gap: 2.5rem;
 
     .header__hero-text {
-      padding: 20px;
-      gap: 10px;
+      padding: 1.25rem;
+      gap: 0.65rem;
       color: var(--light-text-color);
 
       .hero-title {
-        padding: 10px;
-        gap: 10px;
-        font-size: 48px;
-        line-height: 55px;
+        padding: 0.65rem;
+        gap: 0.65rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
         letter-spacing: 0.2px;
         text-align: center;
         font-weight: 400;
       }
 
       .hero-subtitle {
-        padding: 10px;
-        gap: 10px;
-        font-size: 28px;
-        line-height: 40px;
+        padding: 0.65rem;
+        gap: 10.65rem;
+        font-size: 1.75rem;
+        line-height: 2.5rem;
         letter-spacing: 0.2px;
         text-align: center;
         font-weight: 300;
@@ -79,49 +79,20 @@
     }
   }
 
-  /*.header__actions {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-
-    .header__actions-p {
-      padding: 0.5rem 1.25rem;
-      background-color: var(--button-bg-color);
-      border-radius: 8px;
-      transition: background-color 0.25s ease;
-    }
-
-    .header__actions-p:hover {
-      background-color: var(--light-text-color);
-    }
-
-    .header__actions-p:hover .header__button {
-      color: var(--dark-text-color);
-    }
-
-    .header__button {
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      color: var(--button-text-color);
-      font-weight: 600;
-      font-family: var(--font-main);
-    }
-  }*/
   .header__actions {
     display: flex;
     justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: 3.2rem;
   }
 
   .header__button {
     display: inline-block;
     padding: 0.5rem 1.25rem;
     background-color: var(--button-bg-color);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     text-align: center;
     text-decoration: none;
-    color: var(--button-text-color);
+    color: var(--light-text-color);
     font-weight: 600;
     font-family: var(--font-main);
     transition: background-color 0.25s ease, color 0.25s ease;
@@ -157,13 +128,13 @@
     .header__hero {
       .header__hero-text {
         .hero-title {
-          font-size: 74px;
-          line-height: 84px;
+          font-size: 4.6rem;
+          line-height: 5.3rem;
           font-weight: 700;
         }
         .hero-subtitle {
-          font-size: 30px;
-          line-height: 50px;
+          font-size: 1.9rem;
+          line-height: 3.13rem;
           font-weight: 400;
         }
       }
