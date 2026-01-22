@@ -1,6 +1,7 @@
 .features {
   background-color: var(--light-text-color);
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
 
   .features__content {
     text-align: center;
@@ -50,7 +51,7 @@
 }
 
 .features__video-wrapper {
-  max-width: 100%;
+  max-width: 18rem;
   margin: 3rem auto;
 
   .features__video-iframe {

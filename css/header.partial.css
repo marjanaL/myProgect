@@ -76,30 +76,6 @@
       }
     }
   }
-
-  .header__actions {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 3.2rem;
-  }
-
-  .header__button {
-    display: inline-block;
-    padding: 0.5rem 1.25rem;
-    background-color: var(--button-bg-color);
-    border-radius: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    color: var(--light-text-color);
-    font-weight: 600;
-    font-family: var(--font-main);
-    transition: background-color 0.25s ease, color 0.25s ease;
-  }
-
-  .header__button:hover {
-    background-color: var(--light-text-color);
-    color: var(--dark-text-color);
-  }
 }
 
 @media (min-width: 48rem) {
