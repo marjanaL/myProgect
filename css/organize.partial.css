@@ -23,7 +23,7 @@
       .organize__description {
         color: var(--dark-text-color);
         font-size: 1rem;
-        line-height: 1.8;
+        line-height: 1.8rem;
         font-weight: 400;
       }
     }
@@ -35,6 +35,81 @@
         display: block;
         max-width: 100%;
         height: auto;
+      }
+    }
+  }
+}
+
+.fingertips {
+  background-color: var(--light-text-color);
+  padding-top: 5rem;
+
+  .fingertips__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+
+    .fingertips__media {
+      width: 100%;
+
+      .fingertips__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .fingertips__text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+
+      .fingertips__title {
+        color: var(--dark-text-color);
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+        font-weight: 800;
+      }
+
+      .fingertips__subtitle {
+        color: var(--dark-text-color);
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: 400;
+      }
+
+      .fingertips__description {
+        color: var(--dark-text-color);
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        font-weight: 400;
+      }
+
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .subscribe__field {
+        flex: 1;
+      }
+
+      .subscribe__input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        font-size: 0.875rem;
+        height: 2.5rem;
+        border: 1px solid var(--dark-text-color);
+        outline: none;
+      }
+
+      .subscribe__input::placeholder {
+        color: #999;
       }
     }
   }
@@ -70,4 +145,33 @@
       }
     }
   }
+
+  .fingertips {
+    .fingertips__content {
+      flex-direction: row;
+      align-items: stretch;
+      gap: 4rem;
+
+      .fingertips__media {
+        flex: 0 1 65%;
+        display: flex;
+        align-items: center;
+
+        .fingertips__image {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .fingertips__text {
+        flex: 0 1 35%;
+        text-align: left;
+
+        .subscribe {
+          flex-direction: row;
+        }
+      } 
+    }
+  }
 }
+
