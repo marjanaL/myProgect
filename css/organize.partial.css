@@ -64,13 +64,13 @@
     .fingertips__text {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 0;
       text-align: center;
+      margin-top: 5rem;
 
       .fingertips__title {
         color: var(--dark-text-color);
-        font-size: 1.2rem;
-        line-height: 1.75rem;
+        font-size: 1rem;
         font-weight: 800;
       }
 
@@ -79,6 +79,8 @@
         font-size: 3rem;
         line-height: 3.5rem;
         font-weight: 400;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
       }
 
       .fingertips__description {
@@ -92,6 +94,7 @@
         display: flex;
         flex-direction: column;
         gap: 0.75rem;
+        margin-top: 2rem;
       }
 
       .subscribe__field {
@@ -101,15 +104,17 @@
       .subscribe__input {
         width: 100%;
         padding: 0.5rem 1rem;
-        border-radius: 2rem;
+        border-radius: 0.5rem;
         font-size: 0.875rem;
         height: 2.5rem;
         border: 1px solid var(--dark-text-color);
         outline: none;
+        background-color: var(--plaseholder-color);
       }
 
       .subscribe__input::placeholder {
-        color: #999;
+        color: var(--dark-text-color);
+        text-align: center;  
       }
     }
   }
