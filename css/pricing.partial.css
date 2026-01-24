@@ -23,7 +23,6 @@
   .pricing__items {
     display: grid;
     grid-template-columns: 1fr;
-    /*margin-top: 4rem;*/
     color: var(--light-text-color);
     gap: 1.5rem;
     align-items: start;

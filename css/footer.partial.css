@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--dark-bg-color);
+
+  .footer__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--light-text-color);
+    gap: 1.5rem;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    .footer__content {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
