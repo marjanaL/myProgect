@@ -16,15 +16,17 @@
       font-size: 1rem;
       font-weight: 300;
       margin-top: 1.5rem;
+      margin-bottom: 1rem;
     }
   }
 
   .pricing__items {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 2rem;
+    /*margin-top: 4rem;*/
     color: var(--light-text-color);
     gap: 1.5rem;
+    align-items: start;
   }
 
   .pricing__item--left {
@@ -37,10 +39,17 @@
 
   .pricing__item--center {
     border-radius: 0.5rem;
-    padding: 2rem;
     width: 100%;
     color: var(--light-text-color);
     background-color: var(--button-bg-color);
+    padding: 3rem 2rem 4.5rem;
+    transform: translateY(-1.5rem);
+    border: 1px solid var(--light-text-colorcolor);
+  }
+
+  .pricing__item--center .button {
+    background-color: var(--light-text-color);
+    color: var(--button-bg-color);
   }
 
   .pricing__item--right {
@@ -63,11 +72,36 @@
     margin-top: 1rem;
     text-align: center;  
   }
-  
+
   .pricing__card-price {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .pricing__number {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .pricing__rest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+  
+  .pricing__symbol {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .pricing__period {
+    font-size: 0.875rem;
+    opacity: 0.7;
   }
 
   .pricing__list {
@@ -103,7 +137,7 @@
 
     .pricing__items {
       grid-template-columns: repeat(3, 1fr);
-      margin-top: 3rem;
+      margin-top: 7rem;
     }
   }
 }
