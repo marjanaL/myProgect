@@ -1,6 +1,6 @@
 .partners {
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   .partners__text {
     text-align: center;
@@ -92,6 +92,7 @@
 
 @media (min-width: 48rem) {
   .partners {
+    margin-top: 4rem;
     .partners__items {
       grid-template-columns: repeat(4, 1fr);
       gap: 0;
