@@ -23,6 +23,11 @@
       gap: 1rem;
     }
 
+    .footer__link:hover {
+      background-color: var(--light-text-color);
+      color: var(--dark-text-color);
+    } 
+
     .footer__autors-nav {
       display: flex;
       flex-direction: column;

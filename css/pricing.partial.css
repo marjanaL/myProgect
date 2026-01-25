@@ -51,6 +51,11 @@
     color: var(--button-bg-color);
   }
 
+  .pricing__item--center .button:hover {
+    background-color: var(--button-bg-color);
+    color: var(--light-text-color);
+  }
+
   .pricing__item--right {
     border-radius: 0.5rem;
     padding: 2rem;
