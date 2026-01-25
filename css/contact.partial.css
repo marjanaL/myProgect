@@ -15,35 +15,96 @@
 
     .contact__text {
       color: var(--dark-text-color);
-      justify-items: center;
       text-align: center;
       grid-area: text;
 
       .contact__title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 400;
       }
 
       .contact__description {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-top: 1.5rem;
       }
     }
 
     .contact__socials {
       grid-area: socials;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
     }
 
     .contact__us {
       grid-area: us;
+      font-size: 0.8rem;
+      margin-top: 1rem;
+
+      .contact__us-address,
+      .contact__us-phone,
+      .contact__us-mail {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0.5rem;
+      }
     }
 
     .contact__form {
       grid-area: form;
+      border: 1px solid var(--dark-text-color);
+      border-radius: 5%;
+      align-items: center;
+      justify-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 2rem;
+
+      .contact__form-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: 1.5rem;
+        text-align: center;
+      }
+
+      .contact__label {
+        flex: 1;
+      }
+
+      .contact__input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
+        height: 2.5rem;
+        border: 1px solid var(--dark-text-color);
+        outline: none;
+        background-color: var(--plaseholder-color);
+      }
+
+      .contact__textarea {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        height: 7.5rem;
+        border: 1px solid var(--dark-text-color);
+        outline: none;
+        background-color: var(--plaseholder-color);
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .actions {
+      align-self: flex-start;
+      margin-left: 1.5rem;
     }
 
     .contact__map {
       grid-area: map;
+      display: none;
     }
   }
 }
@@ -59,6 +120,17 @@
         "form socials";
       align-items: start;
 
+      .contact__text {
+        .contact__title {
+          font-size: 3rem;
+          font-weight: 400;
+        }
+
+        .contact__description {
+          font-size: 1.5rem;
+        }
+      }
+
       .contact__us {
         display: flex;
         gap: 1rem;
@@ -69,6 +141,10 @@
         display: flex;
         gap: 1rem;
         justify-content: flex-start;
+      }
+
+      .contact__map {
+        display: block;
       }
     }
   }
