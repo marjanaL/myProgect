@@ -42,7 +42,6 @@
     color: var(--light-text-color);
     background-color: var(--button-bg-color);
     padding: 3rem 2rem 4.5rem;
-    transform: translateY(-1.5rem);
     border: 1px solid var(--light-text-colorcolor);
   }
 
@@ -142,6 +141,10 @@
     .pricing__items {
       grid-template-columns: repeat(3, 1fr);
       margin-top: 7rem;
+    }
+
+    .pricing__item--center {
+      transform: translateY(-1.5rem);
     }
   }
 }

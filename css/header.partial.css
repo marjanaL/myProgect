@@ -81,6 +81,7 @@
 @media (min-width: 48rem) {
   .header {
     .header__nav {
+      position: relative;
       padding-block: 2rem;
 
       .header__menu {
@@ -90,7 +91,15 @@
       }
 
       .header__menu-link {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        padding: 0.25rem 0.25rem;
+        
+      }
+
+      .header__center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       .header__socials {
