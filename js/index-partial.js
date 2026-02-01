@@ -17,4 +17,8 @@ function initBurger() {
   });
 }
 
-initBurger();
+document.body.addEventListener("htmx:afterOnLoad", (evt) => {
+  if (evt.target.querySelector('.burger')) {
+    initBurger();
+  }
+});
