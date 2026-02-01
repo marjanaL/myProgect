@@ -1,5 +1,5 @@
 function init() {
-    import('index-partial.js');
+    import('./index-partial.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
