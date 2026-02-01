@@ -1,6 +1,4 @@
-document.addEventListener('htmx:afterSwap', (e) => {
-  if (!e.target.classList.contains('header')) return;
-
+function initBurger() {
   const burger = document.querySelector('.burger');
   const menu = document.querySelector('.header__menu');
 
@@ -17,4 +15,6 @@ document.addEventListener('htmx:afterSwap', (e) => {
       menu.classList.remove('active');
     });
   });
-});
+}
+
+initBurger();
