@@ -12,6 +12,7 @@
     padding-block: 1rem;
 
     .burger {
+      pointer-events: auto;
       background: none;
       border: none;
       cursor: pointer;

@@ -1,24 +1,23 @@
-function initBurger() {
-  const burger = document.querySelector('.burger');
+document.body.addEventListener('click', (e) => {
+  const burger = e.target.closest('.burger');
+  if (!burger) return;
+
   const menu = document.querySelector('.header__menu');
+  if (!menu) return;
 
-  if (!burger || !menu) return;
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    menu.classList.toggle('active');
-  });
+  console.log('BURGER CLICK → active:', menu.classList.contains('active'));
+});
 
-  document.querySelectorAll('.header__menu-link').forEach(link => {
-    link.addEventListener('click', () => {
-      burger.classList.remove('active');
-      menu.classList.remove('active');
-    });
-  });
-}
+document.body.addEventListener('click', (e) => {
+  const link = e.target.closest('.header__menu-link');
+  if (!link) return;
 
-document.body.addEventListener("htmx:afterOnLoad", (evt) => {
-  if (evt.target.querySelector('.burger')) {
-    initBurger();
-  }
+  const menu = document.querySelector('.header__menu');
+  const burger = document.querySelector('.burger');
+
+  menu?.classList.remove('active');
+  burger?.classList.remove('active');
 });
