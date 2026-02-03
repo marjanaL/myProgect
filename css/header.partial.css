@@ -1,5 +1,8 @@
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+    ),
     url("../img/back-header.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -12,7 +15,6 @@
     padding-block: 1rem;
 
     .burger {
-      pointer-events: auto;
       background: none;
       border: none;
       cursor: pointer;
@@ -39,7 +41,7 @@
       justify-content: center;
       align-items: center;
       transform: translateX(100%);
-      transition: 0.3s;
+      transition: transform 0.3s;
     }
     .header__menu.active {
       transform: translateX(0);
@@ -63,9 +65,21 @@
     }
 
     .header__socials {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
+      display: flex; 
+      position: absolute;
+      bottom: 2rem;
+      flex-direction: row;
+      gap: 0.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px);
+      transition: 0.3s;
+    }
+
+    .header__socials.active {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
     }
 
     .header__socials-link {
@@ -138,9 +152,14 @@
       }
 
       .header__socials {
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
         flex-direction: row;
         gap: 0.5rem;
         padding-top: 1rem;
+        transform: none;
+        background: transparent;
       }
     }
     .header__hero {
@@ -159,3 +178,4 @@
     }
   }
 }
+
